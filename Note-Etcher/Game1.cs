@@ -11,7 +11,9 @@ public class Game1 : Game
     private GraphicsDeviceManager _graphics;
     private SpriteBatch _spriteBatch;
     private MouseCursor _cursor;
-    private SceneManager _sceneManager;
+    
+    // Scenes
+    public SceneManager _sceneManager { get; private set; }
 
     public Game1()
     {
@@ -24,6 +26,7 @@ public class Game1 : Game
     {
         _sceneManager = new SceneManager();
         _sceneManager.Register(Scenes.MAINMENU, new MainMenu(this));
+        _sceneManager.Register(Scenes.SETTINGS, new SettingsMenu(this));
         _sceneManager.SwitchTo(Scenes.MAINMENU);
         base.Initialize();
     }
@@ -38,8 +41,9 @@ public class Game1 : Game
     protected override void Update(GameTime gameTime)
     {
         Mouse.SetCursor(_cursor);
+        
         if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed ||
-            Keyboard.GetState().IsKeyDown(Keys.Escape))
+            Keyboard.GetState().IsKeyDown(Keys.F4))
             Exit();
 
         _sceneManager.Update(gameTime);

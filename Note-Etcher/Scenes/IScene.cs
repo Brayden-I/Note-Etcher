@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -30,5 +31,9 @@ public class SceneManager
     }
 
     public void Update(GameTime gameTime) => _activeScene?.Update(gameTime);
-    public void Draw(GameTime gameTime, SpriteBatch spriteBatch) => _activeScene?.Draw(gameTime, spriteBatch);
+    public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
+    {
+        Console.WriteLine(_activeScene?.GetType().Name);
+        _activeScene?.Draw(gameTime, spriteBatch);
+    } 
 }

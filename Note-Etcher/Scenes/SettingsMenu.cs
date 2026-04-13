@@ -7,7 +7,7 @@ using Note_Etcher.IScenes.Essentials;
 
 namespace Note_Etcher.IScenes;
 
-public class MainMenu : IScene
+public class SettingsMenu : IScene
 {
     private Game1 _game;
     private ContentManager _content;
@@ -15,7 +15,7 @@ public class MainMenu : IScene
     // SPRITES
     private Texture2D _logo;
 
-    public MainMenu(Game1 game)
+    public SettingsMenu(Game1 game)
     {
         _game = game;
         _content = new ContentManager(game.Services, "Content");
@@ -23,7 +23,7 @@ public class MainMenu : IScene
 
     public void LoadContent()
     {
-        _logo = _content.Load<Texture2D>("Sprites/tux");
+        _logo = _content.Load<Texture2D>("Sprites/tux-cartoon");
     }
 
     private KeyboardState _prevKeyboard;
@@ -33,8 +33,8 @@ public class MainMenu : IScene
         var keyboard = Keyboard.GetState();
         if (keyboard.IsKeyDown(Keys.Escape) && _prevKeyboard.IsKeyUp(Keys.Escape))
         {
-            Console.WriteLine("switching to settings");
-            _game._sceneManager.SwitchTo(Scenes.SETTINGS);
+            Console.WriteLine("switching to main menu");
+            _game._sceneManager.SwitchTo(Scenes.MAINMENU);
         }
         _prevKeyboard = keyboard;
     }
