@@ -1,0 +1,30 @@
+{
+  "Details": {
+    "Name": "Retro Runner",
+    "Author": "Fred Nerk",
+    "Last Updated": "2024-06-01",
+
+    "Description": "A retro note strummer style rhythm game. The player must strum the correct notes as they scroll down the screen to the beat of the music. The game features a variety of songs and difficulty levels, as well as a fun and colorful retro aesthetic.",
+    "Keywords": [
+      "note",
+      "strummer",
+      "retro",
+      "aesthetic"
+    ],
+
+    "stages": [
+      {
+        "Name": "Stage 1",
+        "Description": "The first stage of the game, featuring a simple song and easy difficulty level."
+      },
+      {
+        "Name": "Stage 2",
+        "Description": "The second stage of the game, featuring a more complex song and medium difficulty level."
+      },
+      {
+        "Name": "Stage 3",
+        "Description": "The third stage of the game, featuring a challenging song and hard difficulty level."
+      }
+    ]
+  }
+}
