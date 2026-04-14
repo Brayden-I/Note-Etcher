@@ -121,6 +121,13 @@
 /processorParam:TextureFormat=Color
 /build:Cursors/cursor_none.png
 
+#begin Fonts/TitleFont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:Fonts/TitleFont.spritefont
+
 #begin Sprites/tux-cartoon.png
 /importer:TextureImporter
 /processor:TextureProcessor

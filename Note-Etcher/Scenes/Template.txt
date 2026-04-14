@@ -9,7 +9,7 @@ using Note_Etcher.IScenes.Essentials;
 
 namespace Note_Etcher.IScenes;
 
-public class SettingsMenu : IScene
+public class Playmode : IScene
 {
     private Game1 _game;
     private ContentManager _content;
@@ -18,10 +18,9 @@ public class SettingsMenu : IScene
     private Texture2D _logo;
     
     // Gum UI elements
-    private Panel _panel;
-    private Button _mainMenuButton;
+    private Button _settingsButton;
 
-    public SettingsMenu(Game1 game)
+    public Playmode(Game1 game)
     {
         _game = game;
         _content = new ContentManager(game.Services, "Content");
@@ -29,18 +28,7 @@ public class SettingsMenu : IScene
 
     public void LoadContent()
     {
-        _logo = _content.Load<Texture2D>("Sprites/tux-cartoon");
-        
-        _panel = new Panel();
-        _mainMenuButton = new Button();
-        
-        _panel.AddToRoot();
-        _panel.Anchor(Gum.Wireframe.Anchor.BottomLeft);
-        
-        _panel.AddChild(_mainMenuButton);
-        _mainMenuButton.Text = "Back to Main Menu";
-        _mainMenuButton.Click += (_, _) =>
-            _game._sceneManager.SwitchTo(Scenes.MAINMENU);
+        _logo = _content.Load<Texture2D>("Sprites/tux");
     }
 
     private KeyboardState _prevKeyboard;
@@ -50,7 +38,7 @@ public class SettingsMenu : IScene
         var keyboard = Keyboard.GetState();
         if (keyboard.IsKeyDown(Keys.Escape) && _prevKeyboard.IsKeyUp(Keys.Escape))
         {
-            Console.WriteLine("switching to main menu");
+            Console.WriteLine("switching");
             _game._sceneManager.SwitchTo(Scenes.MAINMENU);
         }
         _prevKeyboard = keyboard;
@@ -63,7 +51,7 @@ public class SettingsMenu : IScene
 
     public void UnloadContent()
     {
-        _panel.RemoveFromRoot();
+        _settingsButton.RemoveFromRoot();
         _content.Unload();
     }
 }

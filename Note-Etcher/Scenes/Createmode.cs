@@ -9,7 +9,7 @@ using Note_Etcher.IScenes.Essentials;
 
 namespace Note_Etcher.IScenes;
 
-public class SettingsMenu : IScene
+public class Createmode : IScene
 {
     private Game1 _game;
     private ContentManager _content;
@@ -21,7 +21,7 @@ public class SettingsMenu : IScene
     private Panel _panel;
     private Button _mainMenuButton;
 
-    public SettingsMenu(Game1 game)
+    public Createmode (Game1 game)
     {
         _game = game;
         _content = new ContentManager(game.Services, "Content");
@@ -29,7 +29,7 @@ public class SettingsMenu : IScene
 
     public void LoadContent()
     {
-        _logo = _content.Load<Texture2D>("Sprites/tux-cartoon");
+        _logo = _content.Load<Texture2D>("Sprites/tux");
         
         _panel = new Panel();
         _mainMenuButton = new Button();
@@ -50,7 +50,7 @@ public class SettingsMenu : IScene
         var keyboard = Keyboard.GetState();
         if (keyboard.IsKeyDown(Keys.Escape) && _prevKeyboard.IsKeyUp(Keys.Escape))
         {
-            Console.WriteLine("switching to main menu");
+            Console.WriteLine("switching");
             _game._sceneManager.SwitchTo(Scenes.MAINMENU);
         }
         _prevKeyboard = keyboard;

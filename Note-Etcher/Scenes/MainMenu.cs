@@ -5,6 +5,8 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using MonoGameGum;
 using Gum.Forms.Controls;
+using Gum.Wireframe;
+using MonoGameGum.GueDeriving;
 using Note_Etcher.IScenes.Essentials;
 
 namespace Note_Etcher.IScenes;
@@ -15,9 +17,13 @@ public class MainMenu : IScene
     private ContentManager _content;
     
     // SPRITES
+    private SpriteFont _titleFont;
     private Texture2D _logo;
     
     // Gum UI elements
+    private Panel _panel;
+    private Button _playButton;
+    private Button _createButton;
     private Button _settingsButton;
 
     public MainMenu(Game1 game)
@@ -29,12 +35,37 @@ public class MainMenu : IScene
     public void LoadContent()
     {
         _logo = _content.Load<Texture2D>("Sprites/tux");
-        
+        _titleFont = _content.Load<SpriteFont>("Fonts/TitleFont");
+
+        _panel = new Panel();
+        _playButton = new Button();
+        _createButton = new Button();
         _settingsButton = new Button();
+        
+        _panel.AddToRoot();
+        _panel.Anchor(Anchor.Left);
+        _panel.Height = 200;
+        _panel.HeightUnits = Gum.DataTypes.DimensionUnitType.Absolute;
+        _panel.Width = 400;
+        _panel.WidthUnits = Gum.DataTypes.DimensionUnitType.Absolute;
+        var panelVisual =_panel.Visual;
+        panelVisual.ChildrenLayout = Gum.Managers.ChildrenLayout.AutoGridHorizontal;
+        
+        panelVisual.AutoGridHorizontalCells = 1;
+        panelVisual.AutoGridVerticalCells = 3;
+        
+        _panel.AddChild(_playButton);
+        _playButton.Text = "Play";
+        _playButton.Click += (_, _) =>
+            _game._sceneManager.SwitchTo(Scenes.PLAYMODE);
+        
+        _panel.AddChild(_createButton);
+        _createButton.Text = "Create";
+        _createButton.Click += (_, _) =>
+            _game._sceneManager.SwitchTo(Scenes.CREATEMODE);
+        
+        _panel.AddChild(_settingsButton);
         _settingsButton.Text = "Settings";
-        _settingsButton.X = 100;
-        _settingsButton.Y = 100;
-        _settingsButton.AddToRoot();
         _settingsButton.Click += (_, _) =>
             _game._sceneManager.SwitchTo(Scenes.SETTINGS);
     }
@@ -55,11 +86,12 @@ public class MainMenu : IScene
     public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
     {
         spriteBatch.Draw(_logo, Vector2.Zero, Color.White);
+        spriteBatch.DrawString(_titleFont, "Note Etcher", new Vector2(100, 50), Color.White);
     }
 
     public void UnloadContent()
     {
-        _settingsButton.RemoveFromRoot();
+        _panel.RemoveFromRoot();
         _content.Unload();
     }
 }

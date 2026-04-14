@@ -32,6 +32,8 @@ public class Game1 : Game
         _sceneManager = new SceneManager();
         
         _sceneManager.Register(Scenes.MAINMENU, new MainMenu(this));
+        _sceneManager.Register(Scenes.PLAYMODE, new Playmode(this));
+        _sceneManager.Register(Scenes.CREATEMODE, new Createmode(this));
         _sceneManager.Register(Scenes.SETTINGS, new SettingsMenu(this));
         _sceneManager.SwitchTo(Scenes.MAINMENU);
         base.Initialize();
