@@ -6,7 +6,5 @@ public enum Scenes
     SETTINGS,
     
     PLAYMODE,
-    CREATEMODE,
-    
-    
+    CREATEMODE
 }
