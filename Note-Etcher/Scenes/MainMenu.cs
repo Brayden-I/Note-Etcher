@@ -3,6 +3,8 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using MonoGameGum;
+using Gum.Forms.Controls;
 using Note_Etcher.IScenes.Essentials;
 
 namespace Note_Etcher.IScenes;
@@ -14,6 +16,9 @@ public class MainMenu : IScene
     
     // SPRITES
     private Texture2D _logo;
+    
+    // Gum UI elements
+    private Button _settingsButton;
 
     public MainMenu(Game1 game)
     {
@@ -24,6 +29,14 @@ public class MainMenu : IScene
     public void LoadContent()
     {
         _logo = _content.Load<Texture2D>("Sprites/tux");
+        
+        _settingsButton = new Button();
+        _settingsButton.Text = "Settings";
+        _settingsButton.X = 100;
+        _settingsButton.Y = 100;
+        _settingsButton.AddToRoot();
+        _settingsButton.Click += (_, _) =>
+            _game._sceneManager.SwitchTo(Scenes.SETTINGS);
     }
 
     private KeyboardState _prevKeyboard;
@@ -46,6 +59,7 @@ public class MainMenu : IScene
 
     public void UnloadContent()
     {
+        _settingsButton.RemoveFromRoot();
         _content.Unload();
     }
 }

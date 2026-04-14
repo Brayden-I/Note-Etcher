@@ -1,6 +1,9 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using MonoGameGum;
+using Gum.Forms;
+using Gum.Forms.Controls;
 using Note_Etcher.IScenes;
 using Note_Etcher.IScenes.Essentials;
 
@@ -14,6 +17,7 @@ public class Game1 : Game
     
     // Scenes
     public SceneManager _sceneManager { get; private set; }
+    public GumService GumUI => GumService.Default;
 
     public Game1()
     {
@@ -24,7 +28,9 @@ public class Game1 : Game
 
     protected override void Initialize()
     {
+        GumUI.Initialize(this);
         _sceneManager = new SceneManager();
+        
         _sceneManager.Register(Scenes.MAINMENU, new MainMenu(this));
         _sceneManager.Register(Scenes.SETTINGS, new SettingsMenu(this));
         _sceneManager.SwitchTo(Scenes.MAINMENU);
@@ -45,7 +51,8 @@ public class Game1 : Game
         if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed ||
             Keyboard.GetState().IsKeyDown(Keys.F4))
             Exit();
-
+        
+        GumUI.Update(gameTime);
         _sceneManager.Update(gameTime);
         base.Update(gameTime);
     }
@@ -54,8 +61,13 @@ public class Game1 : Game
     {
         GraphicsDevice.Clear(Color.DarkRed);
         _spriteBatch.Begin();
+        
+        var fps = 1.0 / gameTime.ElapsedGameTime.TotalSeconds;
+        Window.Title = $"Note Etcher - FPS: {fps:0}";
+        
         _sceneManager.Draw(gameTime, _spriteBatch);
         _spriteBatch.End();
+        GumUI.Draw();
         base.Draw(gameTime);
     }
 }
