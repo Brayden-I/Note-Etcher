@@ -18,13 +18,14 @@ public class MainMenu : IScene
     
     // SPRITES
     private SpriteFont _titleFont;
-    private Texture2D _logo;
     
     // Gum UI elements
     private Panel _panel;
     private Button _playButton;
     private Button _createButton;
     private Button _settingsButton;
+
+    private Image _image;
 
     public MainMenu(Game1 game)
     {
@@ -34,13 +35,13 @@ public class MainMenu : IScene
 
     public void LoadContent()
     {
-        _logo = _content.Load<Texture2D>("Sprites/tux");
         _titleFont = _content.Load<SpriteFont>("Fonts/TitleFont");
 
         _panel = new Panel();
         _playButton = new Button();
         _createButton = new Button();
         _settingsButton = new Button();
+        _image = new Image();
         
         _panel.AddToRoot();
         _panel.Anchor(Anchor.Left);
@@ -68,6 +69,10 @@ public class MainMenu : IScene
         _settingsButton.Text = "Settings";
         _settingsButton.Click += (_, _) =>
             _game._sceneManager.SwitchTo(Scenes.SETTINGS);
+        
+        _image.AddToRoot();
+        _image.Anchor(Anchor.BottomRight);
+        _image.Texture = _content.Load<Texture2D>("Sprites/tux");
     }
 
     private KeyboardState _prevKeyboard;
@@ -85,12 +90,12 @@ public class MainMenu : IScene
 
     public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
     {
-        spriteBatch.Draw(_logo, Vector2.Zero, Color.White);
-        spriteBatch.DrawString(_titleFont, "Note Etcher", new Vector2(100, 50), Color.White);
+        spriteBatch.DrawString(_titleFont, "Note Etcher", new Vector2(50, 50), Color.White);
     }
 
     public void UnloadContent()
     {
+        _image.RemoveFromRoot();
         _panel.RemoveFromRoot();
         _content.Unload();
     }
