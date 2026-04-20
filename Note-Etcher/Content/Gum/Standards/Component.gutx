@@ -3,10 +3,9 @@
   <Name>Component</Name>
   <State>
     <Name>Default</Name>
-    <Variable Type="State" Name="State" Category="States and Visibility" SetsValue="false">
+    <Variable Type="State" Name="State" Category="States and Visibility" SetsValue="true">
       <Value xsi:type="xsd:string">Default</Value>
     </Variable>
-    <Variable Type="State" Name="State" Category="States and Visibility" SetsValue="true" />
   </State>
   <Behaviors />
 </StandardElementSave>

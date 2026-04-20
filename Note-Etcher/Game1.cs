@@ -28,7 +28,7 @@ public class Game1 : Game
 
     protected override void Initialize()
     {
-        GumUI.Initialize(this);
+        GumUI.Initialize(this, "Gum/GumProject.gumx");
         _sceneManager = new SceneManager();
         
         _sceneManager.Register(Scenes.MAINMENU, new MainMenu(this));
