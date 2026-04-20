@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScreenSave xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>MainMenu</Name>
+  <State>
+    <Name>Default</Name>
+    <Variable Type="string" Name="CreateButton.Text" SetsValue="true">
+      <Value xsi:type="xsd:string">Create</Value>
+    </Variable>
+    <Variable Type="float" Name="CreateButton.X" SetsValue="true">
+      <Value xsi:type="xsd:float">0</Value>
+    </Variable>
+    <Variable Type="float" Name="CreateButton.Y" SetsValue="true">
+      <Value xsi:type="xsd:float">167</Value>
+    </Variable>
+    <Variable Type="float" Name="DividerVerticalInstance.Height" SetsValue="true">
+      <Value xsi:type="xsd:float">100</Value>
+    </Variable>
+    <Variable Type="DimensionUnitType" Name="DividerVerticalInstance.HeightUnits" SetsValue="true">
+      <Value xsi:type="xsd:int">1</Value>
+    </Variable>
+    <Variable Type="float" Name="DividerVerticalInstance.X" SetsValue="true">
+      <Value xsi:type="xsd:float">311</Value>
+    </Variable>
+    <Variable Type="float" Name="DividerVerticalInstance.Y" SetsValue="true">
+      <Value xsi:type="xsd:float">0</Value>
+    </Variable>
+    <Variable Type="ChildrenLayout" Name="NewsBox.ChildrenLayout" SetsValue="true">
+      <Value xsi:type="xsd:int">1</Value>
+    </Variable>
+    <Variable Type="float" Name="NewsBox.Height" SetsValue="true">
+      <Value xsi:type="xsd:float">362</Value>
+    </Variable>
+    <Variable Type="float" Name="NewsBox.Width" SetsValue="true">
+      <Value xsi:type="xsd:float">348</Value>
+    </Variable>
+    <Variable Type="float" Name="NewsBox.X" SetsValue="true">
+      <Value xsi:type="xsd:float">390</Value>
+    </Variable>
+    <Variable Type="float" Name="NewsBox.Y" SetsValue="true">
+      <Value xsi:type="xsd:float">59</Value>
+    </Variable>
+    <Variable Type="string" Name="PlayButton.Text" SetsValue="true">
+      <Value xsi:type="xsd:string">Play</Value>
+    </Variable>
+    <Variable Type="float" Name="PlayButton.X" SetsValue="true">
+      <Value xsi:type="xsd:float">0</Value>
+    </Variable>
+    <Variable Type="float" Name="PlayButton.Y" SetsValue="true">
+      <Value xsi:type="xsd:float">101</Value>
+    </Variable>
+    <Variable Type="string" Name="SettingsButton.Text" SetsValue="true">
+      <Value xsi:type="xsd:string">Settings</Value>
+    </Variable>
+    <Variable Type="float" Name="SettingsButton.X" SetsValue="true">
+      <Value xsi:type="xsd:float">4</Value>
+    </Variable>
+    <Variable Type="float" Name="SettingsButton.Y" SetsValue="true">
+      <Value xsi:type="xsd:float">236</Value>
+    </Variable>
+    <Variable Type="int" Name="Title.Blue" SetsValue="true">
+      <Value xsi:type="xsd:int">218</Value>
+    </Variable>
+    <Variable Type="int" Name="Title.FontSize" SetsValue="true">
+      <Value xsi:type="xsd:int">48</Value>
+    </Variable>
+    <Variable Type="int" Name="Title.Green" SetsValue="true">
+      <Value xsi:type="xsd:int">0</Value>
+    </Variable>
+    <Variable Type="bool" Name="Title.IsBold" SetsValue="true">
+      <Value xsi:type="xsd:boolean">true</Value>
+    </Variable>
+    <Variable Type="int" Name="Title.Red" SetsValue="true">
+      <Value xsi:type="xsd:int">117</Value>
+    </Variable>
+    <Variable Type="string" Name="Title.Text" SetsValue="true">
+      <Value xsi:type="xsd:string">Note Etcher</Value>
+    </Variable>
+    <Variable Type="PositionUnitType" Name="Title.XUnits" SetsValue="true">
+      <Value xsi:type="xsd:int">2</Value>
+    </Variable>
+    <Variable Type="PositionUnitType" Name="Title.YUnits" SetsValue="true">
+      <Value xsi:type="xsd:int">3</Value>
+    </Variable>
+  </State>
+  <Instance Name="Title" BaseType="Text" />
+  <Instance Name="PlayButton" BaseType="Controls/ButtonStandard" />
+  <Instance Name="CreateButton" BaseType="Controls/ButtonStandard" />
+  <Instance Name="SettingsButton" BaseType="Controls/ButtonStandard" />
+  <Instance Name="DividerVerticalInstance" BaseType="Elements/DividerVertical" />
+  <Instance Name="NewsBox" BaseType="Container" />
+  <Behaviors />
+</ScreenSave>
