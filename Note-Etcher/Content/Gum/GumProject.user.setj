@@ -3,10 +3,10 @@
     "ExpandedNodes": [
       "Screens",
       "Screens/MainMenu",
+      "Screens/SettingsMenu",
       "Components",
-      "Components/Controls",
-      "Components/Elements",
-      "Components/Elements/DividerVertical",
+      "Components/Styles",
+      "Components/Styles/TextStyles",
       "Standard",
       "Behaviors"
     ]
