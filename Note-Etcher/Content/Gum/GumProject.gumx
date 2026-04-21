@@ -53,6 +53,7 @@
   <ShowLocalizationInGum>true</ShowLocalizationInGum>
   <CurrentLanguageIndex>0</CurrentLanguageIndex>
   <ScreenReference Name="MainMenu" />
+  <ScreenReference Name="SettingsMenu" />
   <ComponentReference Name="Controls/ButtonClose" />
   <ComponentReference Name="Controls/ButtonConfirm" />
   <ComponentReference Name="Controls/ButtonDeny" />

@@ -54,8 +54,8 @@ public class Game1 : Game
             Keyboard.GetState().IsKeyDown(Keys.F4))
             Exit();
         
-        GumUI.Update(gameTime);
         _sceneManager.Update(gameTime);
+        GumUI.Update(gameTime);
         base.Update(gameTime);
     }
 
