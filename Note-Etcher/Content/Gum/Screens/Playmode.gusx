@@ -1,8 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScreenSave xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Name>SettingsMenu</Name>
+  <Name>Playmode</Name>
   <State>
     <Name>Default</Name>
+    <Variable Type="ChildrenLayout" Name="AlbumContainer.ChildrenLayout" SetsValue="true">
+      <Value xsi:type="xsd:int">2</Value>
+    </Variable>
+    <Variable Type="bool" Name="AlbumContainer.ClipsChildren" SetsValue="true">
+      <Value xsi:type="xsd:boolean">false</Value>
+    </Variable>
+    <Variable Type="string" Name="AlbumContainer.ContainedType" SetsValue="true">
+      <Value xsi:type="xsd:string">NoteEtcherComponents/Album</Value>
+    </Variable>
+    <Variable Type="float" Name="AlbumContainer.Height" SetsValue="true">
+      <Value xsi:type="xsd:float">152</Value>
+    </Variable>
+    <Variable Type="float" Name="AlbumContainer.StackSpacing" SetsValue="true">
+      <Value xsi:type="xsd:float">50</Value>
+    </Variable>
+    <Variable Type="float" Name="AlbumContainer.Width" SetsValue="true">
+      <Value xsi:type="xsd:float">90</Value>
+    </Variable>
+    <Variable Type="DimensionUnitType" Name="AlbumContainer.WidthUnits" SetsValue="true">
+      <Value xsi:type="xsd:int">1</Value>
+    </Variable>
+    <Variable Type="float" Name="AlbumContainer.X" SetsValue="true">
+      <Value xsi:type="xsd:float">50</Value>
+    </Variable>
+    <Variable Type="HorizontalAlignment" Name="AlbumContainer.XOrigin" SetsValue="true">
+      <Value xsi:type="xsd:int">1</Value>
+    </Variable>
+    <Variable Type="PositionUnitType" Name="AlbumContainer.XUnits" SetsValue="true">
+      <Value xsi:type="xsd:int">2</Value>
+    </Variable>
+    <Variable Type="float" Name="AlbumContainer.Y" SetsValue="true">
+      <Value xsi:type="xsd:float">50</Value>
+    </Variable>
+    <Variable Type="VerticalAlignment" Name="AlbumContainer.YOrigin" SetsValue="true">
+      <Value xsi:type="xsd:int">1</Value>
+    </Variable>
+    <Variable Type="PositionUnitType" Name="AlbumContainer.YUnits" SetsValue="true">
+      <Value xsi:type="xsd:int">3</Value>
+    </Variable>
     <Variable Type="float" Name="BackButton.Height" SetsValue="true">
       <Value xsi:type="xsd:float">46</Value>
     </Variable>
@@ -30,8 +69,9 @@
     <Variable Type="bool" Name="Header.IsBold" SetsValue="true">
       <Value xsi:type="xsd:boolean">true</Value>
     </Variable>
+    <Variable Type="string" Name="Header.Parent" SetsValue="true" />
     <Variable Type="string" Name="Header.Text" SetsValue="true">
-      <Value xsi:type="xsd:string">Settings</Value>
+      <Value xsi:type="xsd:string">Play</Value>
     </Variable>
     <Variable Type="float" Name="Header.X" SetsValue="true">
       <Value xsi:type="xsd:float">1</Value>
@@ -63,10 +103,10 @@
     <Variable Type="PositionUnitType" Name="Title.YUnits" SetsValue="true">
       <Value xsi:type="xsd:int">3</Value>
     </Variable>
-    <Variable Type="string" Name="BackButton.Parent" SetsValue="true" />
   </State>
   <Instance Name="Title" BaseType="Text" />
-  <Instance Name="BackButton" BaseType="Controls/ButtonStandard" />
   <Instance Name="Header" BaseType="Text" />
+  <Instance Name="BackButton" BaseType="Controls/ButtonStandard" />
+  <Instance Name="AlbumContainer" BaseType="Container" />
   <Behaviors />
 </ScreenSave>

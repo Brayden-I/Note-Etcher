@@ -53,6 +53,7 @@
   <ShowLocalizationInGum>true</ShowLocalizationInGum>
   <CurrentLanguageIndex>0</CurrentLanguageIndex>
   <ScreenReference Name="MainMenu" />
+  <ScreenReference Name="Playmode" />
   <ScreenReference Name="SettingsMenu" />
   <ComponentReference Name="Controls/ButtonClose" />
   <ComponentReference Name="Controls/ButtonConfirm" />
@@ -96,6 +97,7 @@
   <ComponentReference Name="Elements/PercentBar" />
   <ComponentReference Name="Elements/PercentBarIcon" />
   <ComponentReference Name="Elements/VerticalLines" />
+  <ComponentReference Name="NoteEtcherComponents/Album" />
   <ComponentReference Name="Styles" />
   <StandardElementReference Name="Circle" />
   <StandardElementReference Name="ColoredRectangle" />

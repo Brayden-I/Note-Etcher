@@ -32,7 +32,7 @@ public class MainMenu : IScene
             var doc = XDocument.Parse(xml);
             var items = doc.Descendants("item");
 
-            foreach (var item in items.Take(5))
+            foreach (var item in items.Take(10))
             {
                 var title = item.Element("title")?.Value ?? "";
                 var notice = new Label();
