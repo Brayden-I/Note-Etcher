@@ -15,6 +15,7 @@
     <Variable Type="float" Name="AlbumContainer.Height" SetsValue="true">
       <Value xsi:type="xsd:float">152</Value>
     </Variable>
+    <Variable Type="string" Name="AlbumContainer.Parent" SetsValue="true" />
     <Variable Type="float" Name="AlbumContainer.StackSpacing" SetsValue="true">
       <Value xsi:type="xsd:float">50</Value>
     </Variable>
@@ -42,9 +43,19 @@
     <Variable Type="PositionUnitType" Name="AlbumContainer.YUnits" SetsValue="true">
       <Value xsi:type="xsd:int">3</Value>
     </Variable>
+    <Variable Type="string" Name="AlbumInstance.Parent" SetsValue="true">
+      <Value xsi:type="xsd:string">AlbumContainer</Value>
+    </Variable>
+    <Variable Type="string" Name="AlbumInstance1.Parent" SetsValue="true">
+      <Value xsi:type="xsd:string">AlbumContainer</Value>
+    </Variable>
+    <Variable Type="string" Name="AlbumInstance2.Parent" SetsValue="true">
+      <Value xsi:type="xsd:string">AlbumContainer</Value>
+    </Variable>
     <Variable Type="float" Name="BackButton.Height" SetsValue="true">
       <Value xsi:type="xsd:float">46</Value>
     </Variable>
+    <Variable Type="string" Name="BackButton.Parent" SetsValue="true" />
     <Variable Type="string" Name="BackButton.Text" SetsValue="true">
       <Value xsi:type="xsd:string">Back to Main Menu</Value>
     </Variable>
@@ -104,9 +115,12 @@
       <Value xsi:type="xsd:int">3</Value>
     </Variable>
   </State>
+  <Instance Name="AlbumInstance" BaseType="NoteEtcherComponents/Album" />
+  <Instance Name="AlbumInstance1" BaseType="NoteEtcherComponents/Album" />
+  <Instance Name="AlbumInstance2" BaseType="NoteEtcherComponents/Album" />
   <Instance Name="Title" BaseType="Text" />
   <Instance Name="Header" BaseType="Text" />
-  <Instance Name="BackButton" BaseType="Controls/ButtonStandard" />
   <Instance Name="AlbumContainer" BaseType="Container" />
+  <Instance Name="BackButton" BaseType="Controls/ButtonStandard" />
   <Behaviors />
 </ScreenSave>
