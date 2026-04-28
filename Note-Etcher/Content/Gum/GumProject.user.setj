@@ -1,0 +1,16 @@
+{
+  "TreeViewState": {
+    "ExpandedNodes": [
+      "Screens",
+      "Screens/Createmode",
+      "Screens/MainMenu",
+      "Screens/Playmode",
+      "Screens/SettingsMenu",
+      "Components",
+      "Components/Styles",
+      "Components/Styles/TextStyles",
+      "Standard",
+      "Behaviors"
+    ]
+  }
+}

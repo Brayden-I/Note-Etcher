@@ -128,6 +128,441 @@
 /processorParam:TextureFormat=Compressed
 /build:Fonts/TitleFont.spritefont
 
+#begin Gum/Behaviors/ButtonBehavior.behx
+/copy:Gum/Behaviors/ButtonBehavior.behx
+
+#begin Gum/Behaviors/CheckBoxBehavior.behx
+/copy:Gum/Behaviors/CheckBoxBehavior.behx
+
+#begin Gum/Behaviors/ComboBoxBehavior.behx
+/copy:Gum/Behaviors/ComboBoxBehavior.behx
+
+#begin Gum/Behaviors/DialogBoxBehavior.behx
+/copy:Gum/Behaviors/DialogBoxBehavior.behx
+
+#begin Gum/Behaviors/InputDeviceSelectionItemBehavior.behx
+/copy:Gum/Behaviors/InputDeviceSelectionItemBehavior.behx
+
+#begin Gum/Behaviors/InputDeviceSelectorBehavior.behx
+/copy:Gum/Behaviors/InputDeviceSelectorBehavior.behx
+
+#begin Gum/Behaviors/ItemsControlBehavior.behx
+/copy:Gum/Behaviors/ItemsControlBehavior.behx
+
+#begin Gum/Behaviors/LabelBehavior.behx
+/copy:Gum/Behaviors/LabelBehavior.behx
+
+#begin Gum/Behaviors/ListBoxBehavior.behx
+/copy:Gum/Behaviors/ListBoxBehavior.behx
+
+#begin Gum/Behaviors/ListBoxItemBehavior.behx
+/copy:Gum/Behaviors/ListBoxItemBehavior.behx
+
+#begin Gum/Behaviors/MenuBehavior.behx
+/copy:Gum/Behaviors/MenuBehavior.behx
+
+#begin Gum/Behaviors/MenuItemBehavior.behx
+/copy:Gum/Behaviors/MenuItemBehavior.behx
+
+#begin Gum/Behaviors/OnScreenKeyboardBehavior.behx
+/copy:Gum/Behaviors/OnScreenKeyboardBehavior.behx
+
+#begin Gum/Behaviors/PanelBehavior.behx
+/copy:Gum/Behaviors/PanelBehavior.behx
+
+#begin Gum/Behaviors/PasswordBoxBehavior.behx
+/copy:Gum/Behaviors/PasswordBoxBehavior.behx
+
+#begin Gum/Behaviors/PlayerJoinViewBehavior.behx
+/copy:Gum/Behaviors/PlayerJoinViewBehavior.behx
+
+#begin Gum/Behaviors/PlayerJoinViewItemBehavior.behx
+/copy:Gum/Behaviors/PlayerJoinViewItemBehavior.behx
+
+#begin Gum/Behaviors/RadioButtonBehavior.behx
+/copy:Gum/Behaviors/RadioButtonBehavior.behx
+
+#begin Gum/Behaviors/ScrollBarBehavior.behx
+/copy:Gum/Behaviors/ScrollBarBehavior.behx
+
+#begin Gum/Behaviors/ScrollViewerBehavior.behx
+/copy:Gum/Behaviors/ScrollViewerBehavior.behx
+
+#begin Gum/Behaviors/SettingsViewBehavior.behx
+/copy:Gum/Behaviors/SettingsViewBehavior.behx
+
+#begin Gum/Behaviors/SliderBehavior.behx
+/copy:Gum/Behaviors/SliderBehavior.behx
+
+#begin Gum/Behaviors/SplitterBehavior.behx
+/copy:Gum/Behaviors/SplitterBehavior.behx
+
+#begin Gum/Behaviors/StackPanelBehavior.behx
+/copy:Gum/Behaviors/StackPanelBehavior.behx
+
+#begin Gum/Behaviors/TextBoxBehavior.behx
+/copy:Gum/Behaviors/TextBoxBehavior.behx
+
+#begin Gum/Behaviors/ToastBehavior.behx
+/copy:Gum/Behaviors/ToastBehavior.behx
+
+#begin Gum/Behaviors/ToggleBehavior.behx
+/copy:Gum/Behaviors/ToggleBehavior.behx
+
+#begin Gum/Behaviors/TreeViewBehavior.behx
+/copy:Gum/Behaviors/TreeViewBehavior.behx
+
+#begin Gum/Behaviors/TreeViewItemBehavior.behx
+/copy:Gum/Behaviors/TreeViewItemBehavior.behx
+
+#begin Gum/Behaviors/UserControlBehavior.behx
+/copy:Gum/Behaviors/UserControlBehavior.behx
+
+#begin Gum/Behaviors/WindowBehavior.behx
+/copy:Gum/Behaviors/WindowBehavior.behx
+
+#begin Gum/Components/Controls/ButtonClose.gucx
+/copy:Gum/Components/Controls/ButtonClose.gucx
+
+#begin Gum/Components/Controls/ButtonConfirm.gucx
+/copy:Gum/Components/Controls/ButtonConfirm.gucx
+
+#begin Gum/Components/Controls/ButtonDeny.gucx
+/copy:Gum/Components/Controls/ButtonDeny.gucx
+
+#begin Gum/Components/Controls/ButtonIcon.gucx
+/copy:Gum/Components/Controls/ButtonIcon.gucx
+
+#begin Gum/Components/Controls/ButtonStandard.gucx
+/copy:Gum/Components/Controls/ButtonStandard.gucx
+
+#begin Gum/Components/Controls/ButtonStandardIcon.gucx
+/copy:Gum/Components/Controls/ButtonStandardIcon.gucx
+
+#begin Gum/Components/Controls/ButtonTab.gucx
+/copy:Gum/Components/Controls/ButtonTab.gucx
+
+#begin Gum/Components/Controls/CheckBox.gucx
+/copy:Gum/Components/Controls/CheckBox.gucx
+
+#begin Gum/Components/Controls/ComboBox.gucx
+/copy:Gum/Components/Controls/ComboBox.gucx
+
+#begin Gum/Components/Controls/DialogBox.gucx
+/copy:Gum/Components/Controls/DialogBox.gucx
+
+#begin Gum/Components/Controls/ItemsControl.gucx
+/copy:Gum/Components/Controls/ItemsControl.gucx
+
+#begin Gum/Components/Controls/Keyboard.gucx
+/copy:Gum/Components/Controls/Keyboard.gucx
+
+#begin Gum/Components/Controls/KeyboardKey.gucx
+/copy:Gum/Components/Controls/KeyboardKey.gucx
+
+#begin Gum/Components/Controls/Label.gucx
+/copy:Gum/Components/Controls/Label.gucx
+
+#begin Gum/Components/Controls/ListBox.gucx
+/copy:Gum/Components/Controls/ListBox.gucx
+
+#begin Gum/Components/Controls/ListBoxItem.gucx
+/copy:Gum/Components/Controls/ListBoxItem.gucx
+
+#begin Gum/Components/Controls/Menu.gucx
+/copy:Gum/Components/Controls/Menu.gucx
+
+#begin Gum/Components/Controls/MenuItem.gucx
+/copy:Gum/Components/Controls/MenuItem.gucx
+
+#begin Gum/Components/Controls/Panel.gucx
+/copy:Gum/Components/Controls/Panel.gucx
+
+#begin Gum/Components/Controls/PasswordBox.gucx
+/copy:Gum/Components/Controls/PasswordBox.gucx
+
+#begin Gum/Components/Controls/RadioButton.gucx
+/copy:Gum/Components/Controls/RadioButton.gucx
+
+#begin Gum/Components/Controls/ScrollBar.gucx
+/copy:Gum/Components/Controls/ScrollBar.gucx
+
+#begin Gum/Components/Controls/ScrollViewer.gucx
+/copy:Gum/Components/Controls/ScrollViewer.gucx
+
+#begin Gum/Components/Controls/SettingsView.gucx
+/copy:Gum/Components/Controls/SettingsView.gucx
+
+#begin Gum/Components/Controls/Slider.gucx
+/copy:Gum/Components/Controls/Slider.gucx
+
+#begin Gum/Components/Controls/SplitterStandard.gucx
+/copy:Gum/Components/Controls/SplitterStandard.gucx
+
+#begin Gum/Components/Controls/StackPanel.gucx
+/copy:Gum/Components/Controls/StackPanel.gucx
+
+#begin Gum/Components/Controls/TextBox.gucx
+/copy:Gum/Components/Controls/TextBox.gucx
+
+#begin Gum/Components/Controls/Toast.gucx
+/copy:Gum/Components/Controls/Toast.gucx
+
+#begin Gum/Components/Controls/TreeView.gucx
+/copy:Gum/Components/Controls/TreeView.gucx
+
+#begin Gum/Components/Controls/TreeViewItem.gucx
+/copy:Gum/Components/Controls/TreeViewItem.gucx
+
+#begin Gum/Components/Controls/TreeViewToggle.gucx
+/copy:Gum/Components/Controls/TreeViewToggle.gucx
+
+#begin Gum/Components/Controls/UserControl.gucx
+/copy:Gum/Components/Controls/UserControl.gucx
+
+#begin Gum/Components/Controls/Window.gucx
+/copy:Gum/Components/Controls/Window.gucx
+
+#begin Gum/Components/Elements/CautionLines.gucx
+/copy:Gum/Components/Elements/CautionLines.gucx
+
+#begin Gum/Components/Elements/Divider.gucx
+/copy:Gum/Components/Elements/Divider.gucx
+
+#begin Gum/Components/Elements/DividerHorizontal.gucx
+/copy:Gum/Components/Elements/DividerHorizontal.gucx
+
+#begin Gum/Components/Elements/DividerVertical.gucx
+/copy:Gum/Components/Elements/DividerVertical.gucx
+
+#begin Gum/Components/Elements/Icon.gucx
+/copy:Gum/Components/Elements/Icon.gucx
+
+#begin Gum/Components/Elements/PercentBar.gucx
+/copy:Gum/Components/Elements/PercentBar.gucx
+
+#begin Gum/Components/Elements/PercentBarIcon.gucx
+/copy:Gum/Components/Elements/PercentBarIcon.gucx
+
+#begin Gum/Components/Elements/VerticalLines.gucx
+/copy:Gum/Components/Elements/VerticalLines.gucx
+
+#begin Gum/Components/Styles.gucx
+/copy:Gum/Components/Styles.gucx
+
+#begin Gum/EventExport/gum_events.json
+/copy:Gum/EventExport/gum_events.json
+
+#begin Gum/ExampleSpriteFrame.png
+/copy:Gum/ExampleSpriteFrame.png
+
+#begin Gum/FontCache/Font10Arial_0.png
+/copy:Gum/FontCache/Font10Arial_0.png
+
+#begin Gum/FontCache/Font10Arial_Bold_0.png
+/copy:Gum/FontCache/Font10Arial_Bold_0.png
+
+#begin Gum/FontCache/Font10Arial_Bold.bmfc
+/copy:Gum/FontCache/Font10Arial_Bold.bmfc
+
+#begin Gum/FontCache/Font10Arial_Bold.fnt
+/copy:Gum/FontCache/Font10Arial_Bold.fnt
+
+#begin Gum/FontCache/Font10Arial.bmfc
+/copy:Gum/FontCache/Font10Arial.bmfc
+
+#begin Gum/FontCache/Font10Arial.fnt
+/copy:Gum/FontCache/Font10Arial.fnt
+
+#begin Gum/FontCache/Font12Arial_0.png
+/copy:Gum/FontCache/Font12Arial_0.png
+
+#begin Gum/FontCache/Font12Arial_Bold_0.png
+/copy:Gum/FontCache/Font12Arial_Bold_0.png
+
+#begin Gum/FontCache/Font12Arial_Bold.bmfc
+/copy:Gum/FontCache/Font12Arial_Bold.bmfc
+
+#begin Gum/FontCache/Font12Arial_Bold.fnt
+/copy:Gum/FontCache/Font12Arial_Bold.fnt
+
+#begin Gum/FontCache/Font12Arial.bmfc
+/copy:Gum/FontCache/Font12Arial.bmfc
+
+#begin Gum/FontCache/Font12Arial.fnt
+/copy:Gum/FontCache/Font12Arial.fnt
+
+#begin Gum/FontCache/Font14Arial_0.png
+/copy:Gum/FontCache/Font14Arial_0.png
+
+#begin Gum/FontCache/Font14Arial_Bold_0.png
+/copy:Gum/FontCache/Font14Arial_Bold_0.png
+
+#begin Gum/FontCache/Font14Arial_Bold.bmfc
+/copy:Gum/FontCache/Font14Arial_Bold.bmfc
+
+#begin Gum/FontCache/Font14Arial_Bold.fnt
+/copy:Gum/FontCache/Font14Arial_Bold.fnt
+
+#begin Gum/FontCache/Font14Arial_Italic_0.png
+/copy:Gum/FontCache/Font14Arial_Italic_0.png
+
+#begin Gum/FontCache/Font14Arial_Italic_Bold_0.png
+/copy:Gum/FontCache/Font14Arial_Italic_Bold_0.png
+
+#begin Gum/FontCache/Font14Arial_Italic_Bold.bmfc
+/copy:Gum/FontCache/Font14Arial_Italic_Bold.bmfc
+
+#begin Gum/FontCache/Font14Arial_Italic_Bold.fnt
+/copy:Gum/FontCache/Font14Arial_Italic_Bold.fnt
+
+#begin Gum/FontCache/Font14Arial_Italic.bmfc
+/copy:Gum/FontCache/Font14Arial_Italic.bmfc
+
+#begin Gum/FontCache/Font14Arial_Italic.fnt
+/copy:Gum/FontCache/Font14Arial_Italic.fnt
+
+#begin Gum/FontCache/Font14Arial.bmfc
+/copy:Gum/FontCache/Font14Arial.bmfc
+
+#begin Gum/FontCache/Font14Arial.fnt
+/copy:Gum/FontCache/Font14Arial.fnt
+
+#begin Gum/FontCache/Font16Arial_Bold_0.png
+/copy:Gum/FontCache/Font16Arial_Bold_0.png
+
+#begin Gum/FontCache/Font16Arial_Bold.bmfc
+/copy:Gum/FontCache/Font16Arial_Bold.bmfc
+
+#begin Gum/FontCache/Font16Arial_Bold.fnt
+/copy:Gum/FontCache/Font16Arial_Bold.fnt
+
+#begin Gum/FontCache/Font18Arial_0.png
+/copy:Gum/FontCache/Font18Arial_0.png
+
+#begin Gum/FontCache/Font18Arial_Bold_0.png
+/copy:Gum/FontCache/Font18Arial_Bold_0.png
+
+#begin Gum/FontCache/Font18Arial_Bold.bmfc
+/copy:Gum/FontCache/Font18Arial_Bold.bmfc
+
+#begin Gum/FontCache/Font18Arial_Bold.fnt
+/copy:Gum/FontCache/Font18Arial_Bold.fnt
+
+#begin Gum/FontCache/Font18Arial.bmfc
+/copy:Gum/FontCache/Font18Arial.bmfc
+
+#begin Gum/FontCache/Font18Arial.fnt
+/copy:Gum/FontCache/Font18Arial.fnt
+
+#begin Gum/FontCache/Font22Arial_Bold_0.png
+/copy:Gum/FontCache/Font22Arial_Bold_0.png
+
+#begin Gum/FontCache/Font22Arial_Bold.bmfc
+/copy:Gum/FontCache/Font22Arial_Bold.bmfc
+
+#begin Gum/FontCache/Font22Arial_Bold.fnt
+/copy:Gum/FontCache/Font22Arial_Bold.fnt
+
+#begin Gum/FontCache/Font28Arial_Bold_0.png
+/copy:Gum/FontCache/Font28Arial_Bold_0.png
+
+#begin Gum/FontCache/Font28Arial_Bold.bmfc
+/copy:Gum/FontCache/Font28Arial_Bold.bmfc
+
+#begin Gum/FontCache/Font28Arial_Bold.fnt
+/copy:Gum/FontCache/Font28Arial_Bold.fnt
+
+#begin Gum/FontCache/Font48Arial_0.png
+/copy:Gum/FontCache/Font48Arial_0.png
+
+#begin Gum/FontCache/Font48Arial_Bold_0.png
+/copy:Gum/FontCache/Font48Arial_Bold_0.png
+
+#begin Gum/FontCache/Font48Arial_Bold.bmfc
+/copy:Gum/FontCache/Font48Arial_Bold.bmfc
+
+#begin Gum/FontCache/Font48Arial_Bold.fnt
+/copy:Gum/FontCache/Font48Arial_Bold.fnt
+
+#begin Gum/FontCache/Font48Arial.bmfc
+/copy:Gum/FontCache/Font48Arial.bmfc
+
+#begin Gum/FontCache/Font48Arial.fnt
+/copy:Gum/FontCache/Font48Arial.fnt
+
+#begin Gum/GumProject.gumx
+/copy:Gum/GumProject.gumx
+
+#begin Gum/manifest.txt
+/copy:Gum/manifest.txt
+
+#begin Gum/ProjectCodeSettings.codsj
+/copy:Gum/ProjectCodeSettings.codsj
+
+#begin Gum/Screens/DemoScreen.codsj
+/copy:Gum/Screens/DemoScreen.codsj
+
+#begin Gum/Screens/MainMenu.gusx
+/copy:Gum/Screens/MainMenu.gusx
+
+#begin Gum/Standards/Circle.gutx
+/copy:Gum/Standards/Circle.gutx
+
+#begin Gum/Standards/ColoredRectangle.gutx
+/copy:Gum/Standards/ColoredRectangle.gutx
+
+#begin Gum/Standards/Component.gutx
+/copy:Gum/Standards/Component.gutx
+
+#begin Gum/Standards/Container.gutx
+/copy:Gum/Standards/Container.gutx
+
+#begin Gum/Standards/NineSlice.gutx
+/copy:Gum/Standards/NineSlice.gutx
+
+#begin Gum/Standards/Polygon.gutx
+/copy:Gum/Standards/Polygon.gutx
+
+#begin Gum/Standards/Rectangle.gutx
+/copy:Gum/Standards/Rectangle.gutx
+
+#begin Gum/Standards/Sprite.gutx
+/copy:Gum/Standards/Sprite.gutx
+
+#begin Gum/Standards/StandardGraphics/Red_BottomCenter.png
+/copy:Gum/Standards/StandardGraphics/Red_BottomCenter.png
+
+#begin Gum/Standards/StandardGraphics/Red_BottomLeft.png
+/copy:Gum/Standards/StandardGraphics/Red_BottomLeft.png
+
+#begin Gum/Standards/StandardGraphics/Red_BottomRight.png
+/copy:Gum/Standards/StandardGraphics/Red_BottomRight.png
+
+#begin Gum/Standards/StandardGraphics/Red_Center.png
+/copy:Gum/Standards/StandardGraphics/Red_Center.png
+
+#begin Gum/Standards/StandardGraphics/Red_Left.png
+/copy:Gum/Standards/StandardGraphics/Red_Left.png
+
+#begin Gum/Standards/StandardGraphics/Red_Right.png
+/copy:Gum/Standards/StandardGraphics/Red_Right.png
+
+#begin Gum/Standards/StandardGraphics/Red_TopCenter.png
+/copy:Gum/Standards/StandardGraphics/Red_TopCenter.png
+
+#begin Gum/Standards/StandardGraphics/Red_TopLeft.png
+/copy:Gum/Standards/StandardGraphics/Red_TopLeft.png
+
+#begin Gum/Standards/StandardGraphics/Red_TopRight.png
+/copy:Gum/Standards/StandardGraphics/Red_TopRight.png
+
+#begin Gum/Standards/Text.gutx
+/copy:Gum/Standards/Text.gutx
+
+#begin Gum/UISpriteSheet.png
+/copy:Gum/UISpriteSheet.png
+
 #begin Sprites/tux-cartoon.png
 /importer:TextureImporter
 /processor:TextureProcessor

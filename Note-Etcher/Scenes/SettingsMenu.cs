@@ -1,11 +1,16 @@
 using System;
+using System.Linq;
+using System.Net.Http;
+using System.Threading.Tasks;
+using System.Xml.Linq;
+using Gum.Forms.Controls;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using MonoGameGum;
-using Gum.Forms.Controls;
 using Note_Etcher.IScenes.Essentials;
+using Note_Etcher.Screens;
 
 namespace Note_Etcher.IScenes;
 
@@ -13,37 +18,25 @@ public class SettingsMenu : IScene
 {
     private Game1 _game;
     private ContentManager _content;
-    
-    // SPRITES
-    private Texture2D _logo;
-    
-    // Gum UI elements
-    private Panel _panel;
-    private Button _mainMenuButton;
+    private Screens.SettingsMenu _gumScreen;
+    private SpriteFont _titleFont;
+    private KeyboardState _prevKeyboard;
 
     public SettingsMenu(Game1 game)
     {
+
         _game = game;
         _content = new ContentManager(game.Services, "Content");
     }
 
     public void LoadContent()
     {
-        _logo = _content.Load<Texture2D>("Sprites/tux-cartoon");
-        
-        _panel = new Panel();
-        _mainMenuButton = new Button();
-        
-        _panel.AddToRoot();
-        _panel.Anchor(Gum.Wireframe.Anchor.BottomLeft);
-        
-        _panel.AddChild(_mainMenuButton);
-        _mainMenuButton.Text = "Back to Main Menu";
-        _mainMenuButton.Click += (_, _) =>
-            _game._sceneManager.SwitchTo(Scenes.MAINMENU);
-    }
+        _titleFont = _content.Load<SpriteFont>("Fonts/TitleFont");
 
-    private KeyboardState _prevKeyboard;
+        _gumScreen = new Screens.SettingsMenu();
+        _gumScreen.Game = _game;
+        _gumScreen.AddToRoot();
+    }
 
     public void Update(GameTime gameTime)
     {
@@ -58,12 +51,12 @@ public class SettingsMenu : IScene
 
     public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
     {
-        spriteBatch.Draw(_logo, Vector2.Zero, Color.White);
+
     }
 
     public void UnloadContent()
     {
-        _panel.RemoveFromRoot();
+        _gumScreen.RemoveFromRoot();
         _content.Unload();
     }
 }

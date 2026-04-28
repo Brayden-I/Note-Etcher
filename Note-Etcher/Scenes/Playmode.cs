@@ -13,13 +13,9 @@ public class Playmode : IScene
 {
     private Game1 _game;
     private ContentManager _content;
-    
-    // SPRITES
-    private Texture2D _logo;
-    
-    // Gum UI elements
-    private Panel _panel;
-    private Button _mainMenuButton;
+    private Screens.Playmode _gumScreen;
+    private SpriteFont _titleFont;
+    private KeyboardState _prevKeyboard;
 
     public Playmode(Game1 game)
     {
@@ -29,41 +25,29 @@ public class Playmode : IScene
 
     public void LoadContent()
     {
-        _logo = _content.Load<Texture2D>("Sprites/tux");
-        
-        _panel = new Panel();
-        _mainMenuButton = new Button();
-        
-        _panel.AddToRoot();
-        _panel.Anchor(Gum.Wireframe.Anchor.BottomLeft);
-        
-        _panel.AddChild(_mainMenuButton);
-        _mainMenuButton.Text = "Back to Main Menu";
-        _mainMenuButton.Click += (_, _) =>
-            _game._sceneManager.SwitchTo(Scenes.MAINMENU);
-    }
+        _titleFont = _content.Load<SpriteFont>("Fonts/TitleFont");
 
-    private KeyboardState _prevKeyboard;
+        _gumScreen = new Screens.Playmode();
+        _gumScreen.Game = _game;
+        _gumScreen.AddToRoot();
+    }
 
     public void Update(GameTime gameTime)
     {
         var keyboard = Keyboard.GetState();
         if (keyboard.IsKeyDown(Keys.Escape) && _prevKeyboard.IsKeyUp(Keys.Escape))
-        {
-            Console.WriteLine("switching");
             _game._sceneManager.SwitchTo(Scenes.MAINMENU);
-        }
         _prevKeyboard = keyboard;
     }
 
     public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
     {
-        spriteBatch.Draw(_logo, Vector2.Zero, Color.White);
+        
     }
 
     public void UnloadContent()
     {
-        _panel.RemoveFromRoot();
+        _gumScreen.RemoveFromRoot();
         _content.Unload();
     }
 }

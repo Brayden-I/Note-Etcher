@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ComponentSave xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>NoteEtcherComponents/Album</Name>
+  <BaseType>Container</BaseType>
+  <State>
+    <Name>Default</Name>
+    <Variable Type="string" Name="AuthorLabel.Parent" SetsValue="true">
+      <Value xsi:type="xsd:string">ContainerInstance</Value>
+    </Variable>
+    <Variable Type="string" Name="AuthorLabel.Text" SetsValue="true">
+      <Value xsi:type="xsd:string">Author: 
+</Value>
+    </Variable>
+    <Variable Type="float" Name="AuthorLabel.X" SetsValue="true">
+      <Value xsi:type="xsd:float">5</Value>
+    </Variable>
+    <Variable Type="float" Name="AuthorLabel.Y" SetsValue="true">
+      <Value xsi:type="xsd:float">0</Value>
+    </Variable>
+    <Variable Type="ChildrenLayout" Name="ContainerInstance.ChildrenLayout" SetsValue="true">
+      <Value xsi:type="xsd:int">1</Value>
+    </Variable>
+    <Variable Type="float" Name="ContainerInstance.Height" SetsValue="true">
+      <Value xsi:type="xsd:float">100</Value>
+    </Variable>
+    <Variable Type="DimensionUnitType" Name="ContainerInstance.HeightUnits" SetsValue="true">
+      <Value xsi:type="xsd:int">1</Value>
+    </Variable>
+    <Variable Type="string" Name="ContainerInstance.Parent" SetsValue="true">
+      <Value xsi:type="xsd:string">Frame</Value>
+    </Variable>
+    <Variable Type="float" Name="ContainerInstance.Width" SetsValue="true">
+      <Value xsi:type="xsd:float">100</Value>
+    </Variable>
+    <Variable Type="DimensionUnitType" Name="ContainerInstance.WidthUnits" SetsValue="true">
+      <Value xsi:type="xsd:int">1</Value>
+    </Variable>
+    <Variable Type="int" Name="Frame.Blue" SetsValue="true">
+      <Value xsi:type="xsd:int">255</Value>
+    </Variable>
+    <Variable Type="int" Name="Frame.Green" SetsValue="true">
+      <Value xsi:type="xsd:int">61</Value>
+    </Variable>
+    <Variable Type="float" Name="Frame.Height" SetsValue="true">
+      <Value xsi:type="xsd:float">150</Value>
+    </Variable>
+    <Variable Type="int" Name="Frame.Red" SetsValue="true">
+      <Value xsi:type="xsd:int">168</Value>
+    </Variable>
+    <Variable Type="float" Name="Frame.Width" SetsValue="true">
+      <Value xsi:type="xsd:float">150</Value>
+    </Variable>
+    <Variable Type="float" Name="KeywordLabel.Height" SetsValue="true">
+      <Value xsi:type="xsd:float">18</Value>
+    </Variable>
+    <Variable Type="string" Name="KeywordLabel.Parent" SetsValue="true">
+      <Value xsi:type="xsd:string">ContainerInstance</Value>
+    </Variable>
+    <Variable Type="string" Name="KeywordLabel.Text" SetsValue="true">
+      <Value xsi:type="xsd:string">Keys: 
+</Value>
+    </Variable>
+    <Variable Type="float" Name="KeywordLabel.Width" SetsValue="true">
+      <Value xsi:type="xsd:float">103</Value>
+    </Variable>
+    <Variable Type="float" Name="KeywordLabel.X" SetsValue="true">
+      <Value xsi:type="xsd:float">5</Value>
+    </Variable>
+    <Variable Type="float" Name="KeywordLabel.Y" SetsValue="true">
+      <Value xsi:type="xsd:float">0</Value>
+    </Variable>
+    <Variable Type="State" Name="State" Category="States and Visibility" SetsValue="false">
+      <Value xsi:type="xsd:string">Default</Value>
+    </Variable>
+    <Variable Type="string" Name="TitleLabel.Parent" SetsValue="true">
+      <Value xsi:type="xsd:string">ContainerInstance</Value>
+    </Variable>
+    <Variable Type="string" Name="TitleLabel.Text" SetsValue="true">
+      <Value xsi:type="xsd:string">Title</Value>
+    </Variable>
+    <Variable Type="float" Name="TitleLabel.X" SetsValue="true">
+      <Value xsi:type="xsd:float">5</Value>
+    </Variable>
+    <Variable Type="float" Name="TitleLabel.Y" SetsValue="true">
+      <Value xsi:type="xsd:float">0</Value>
+    </Variable>
+  </State>
+  <Instance Name="TitleLabel" BaseType="Text" />
+  <Instance Name="KeywordLabel" BaseType="Text" />
+  <Instance Name="AuthorLabel" BaseType="Text" />
+  <Instance Name="ContainerInstance" BaseType="Container" />
+  <Instance Name="Frame" BaseType="ColoredRectangle" />
+  <Behaviors />
+</ComponentSave>

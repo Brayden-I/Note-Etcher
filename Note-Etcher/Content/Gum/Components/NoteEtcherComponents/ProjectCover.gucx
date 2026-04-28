@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ComponentSave xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>NoteEtcherComponents/ProjectCover</Name>
+  <BaseType>Container</BaseType>
+  <State>
+    <Name>Default</Name>
+    <Variable Type="string" Name="ChangeLabel.Parent" SetsValue="true">
+      <Value xsi:type="xsd:string">ContainerInstance</Value>
+    </Variable>
+    <Variable Type="string" Name="ChangeLabel.Text" SetsValue="true">
+      <Value xsi:type="xsd:string">Last Changed: </Value>
+    </Variable>
+    <Variable Type="float" Name="ChangeLabel.X" SetsValue="true">
+      <Value xsi:type="xsd:float">5</Value>
+    </Variable>
+    <Variable Type="float" Name="ChangeLabel.Y" SetsValue="true">
+      <Value xsi:type="xsd:float">0</Value>
+    </Variable>
+    <Variable Type="ChildrenLayout" Name="ContainerInstance.ChildrenLayout" SetsValue="true">
+      <Value xsi:type="xsd:int">1</Value>
+    </Variable>
+    <Variable Type="float" Name="ContainerInstance.Height" SetsValue="true">
+      <Value xsi:type="xsd:float">100</Value>
+    </Variable>
+    <Variable Type="DimensionUnitType" Name="ContainerInstance.HeightUnits" SetsValue="true">
+      <Value xsi:type="xsd:int">1</Value>
+    </Variable>
+    <Variable Type="string" Name="ContainerInstance.Parent" SetsValue="true">
+      <Value xsi:type="xsd:string">Frame</Value>
+    </Variable>
+    <Variable Type="float" Name="ContainerInstance.Width" SetsValue="true">
+      <Value xsi:type="xsd:float">100</Value>
+    </Variable>
+    <Variable Type="DimensionUnitType" Name="ContainerInstance.WidthUnits" SetsValue="true">
+      <Value xsi:type="xsd:int">1</Value>
+    </Variable>
+    <Variable Type="int" Name="Frame.Blue" SetsValue="true">
+      <Value xsi:type="xsd:int">255</Value>
+    </Variable>
+    <Variable Type="int" Name="Frame.Green" SetsValue="true">
+      <Value xsi:type="xsd:int">61</Value>
+    </Variable>
+    <Variable Type="float" Name="Frame.Height" SetsValue="true">
+      <Value xsi:type="xsd:float">100</Value>
+    </Variable>
+    <Variable Type="DimensionUnitType" Name="Frame.HeightUnits" SetsValue="true">
+      <Value xsi:type="xsd:int">1</Value>
+    </Variable>
+    <Variable Type="int" Name="Frame.Red" SetsValue="true">
+      <Value xsi:type="xsd:int">168</Value>
+    </Variable>
+    <Variable Type="float" Name="Frame.Width" SetsValue="true">
+      <Value xsi:type="xsd:float">100</Value>
+    </Variable>
+    <Variable Type="DimensionUnitType" Name="Frame.WidthUnits" SetsValue="true">
+      <Value xsi:type="xsd:int">1</Value>
+    </Variable>
+    <Variable Type="float" Name="Frame.X" SetsValue="true">
+      <Value xsi:type="xsd:float">0</Value>
+    </Variable>
+    <Variable Type="float" Name="Height" SetsValue="true">
+      <Value xsi:type="xsd:float">100</Value>
+    </Variable>
+    <Variable Type="float" Name="KeywordLabel.Height" SetsValue="true">
+      <Value xsi:type="xsd:float">18</Value>
+    </Variable>
+    <Variable Type="string" Name="KeywordLabel.Parent" SetsValue="true">
+      <Value xsi:type="xsd:string">ContainerInstance</Value>
+    </Variable>
+    <Variable Type="string" Name="KeywordLabel.Text" SetsValue="true">
+      <Value xsi:type="xsd:string">Author
+</Value>
+    </Variable>
+    <Variable Type="float" Name="KeywordLabel.Width" SetsValue="true">
+      <Value xsi:type="xsd:float">103</Value>
+    </Variable>
+    <Variable Type="float" Name="KeywordLabel.X" SetsValue="true">
+      <Value xsi:type="xsd:float">5</Value>
+    </Variable>
+    <Variable Type="float" Name="KeywordLabel.Y" SetsValue="true">
+      <Value xsi:type="xsd:float">0</Value>
+    </Variable>
+    <Variable Type="State" Name="State" Category="States and Visibility" SetsValue="false">
+      <Value xsi:type="xsd:string">Default</Value>
+    </Variable>
+    <Variable Type="string" Name="TitleLabel.Parent" SetsValue="true">
+      <Value xsi:type="xsd:string">ContainerInstance</Value>
+    </Variable>
+    <Variable Type="string" Name="TitleLabel.Text" SetsValue="true">
+      <Value xsi:type="xsd:string">Title</Value>
+    </Variable>
+    <Variable Type="float" Name="TitleLabel.X" SetsValue="true">
+      <Value xsi:type="xsd:float">5</Value>
+    </Variable>
+    <Variable Type="float" Name="TitleLabel.Y" SetsValue="true">
+      <Value xsi:type="xsd:float">0</Value>
+    </Variable>
+    <Variable Type="float" Name="Width" SetsValue="true">
+      <Value xsi:type="xsd:float">200</Value>
+    </Variable>
+    <Variable Type="DimensionUnitType" Name="WidthUnits" SetsValue="true">
+      <Value xsi:type="xsd:int">4</Value>
+    </Variable>
+    <Variable Type="float" Name="X" SetsValue="true">
+      <Value xsi:type="xsd:float">50</Value>
+    </Variable>
+    <Variable Type="HorizontalAlignment" Name="XOrigin" SetsValue="true">
+      <Value xsi:type="xsd:int">1</Value>
+    </Variable>
+    <Variable Type="PositionUnitType" Name="XUnits" SetsValue="true">
+      <Value xsi:type="xsd:int">2</Value>
+    </Variable>
+  </State>
+  <Instance Name="TitleLabel" BaseType="Text" />
+  <Instance Name="KeywordLabel" BaseType="Text" />
+  <Instance Name="ChangeLabel" BaseType="Text" />
+  <Instance Name="ContainerInstance" BaseType="Container" />
+  <Instance Name="Frame" BaseType="ColoredRectangle" />
+  <Behaviors />
+</ComponentSave>
