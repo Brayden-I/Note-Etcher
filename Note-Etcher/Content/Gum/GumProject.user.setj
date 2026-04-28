@@ -2,7 +2,13 @@
   "TreeViewState": {
     "ExpandedNodes": [
       "Screens",
-      "Screens/MainMenu"
+      "Screens/MainMenu",
+      "Screens/SettingsMenu",
+      "Components",
+      "Components/Styles",
+      "Components/Styles/TextStyles",
+      "Standard",
+      "Behaviors"
     ]
   }
 }

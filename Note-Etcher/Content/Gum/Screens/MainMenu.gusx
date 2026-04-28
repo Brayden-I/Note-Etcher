@@ -18,8 +18,14 @@
     <Variable Type="DimensionUnitType" Name="DividerVerticalInstance.HeightUnits" SetsValue="true">
       <Value xsi:type="xsd:int">1</Value>
     </Variable>
+    <Variable Type="float" Name="DividerVerticalInstance.Width" SetsValue="true">
+      <Value xsi:type="xsd:float">5</Value>
+    </Variable>
     <Variable Type="float" Name="DividerVerticalInstance.X" SetsValue="true">
-      <Value xsi:type="xsd:float">311</Value>
+      <Value xsi:type="xsd:float">45</Value>
+    </Variable>
+    <Variable Type="PositionUnitType" Name="DividerVerticalInstance.XUnits" SetsValue="true">
+      <Value xsi:type="xsd:int">2</Value>
     </Variable>
     <Variable Type="float" Name="DividerVerticalInstance.Y" SetsValue="true">
       <Value xsi:type="xsd:float">0</Value>
@@ -34,10 +40,44 @@
       <Value xsi:type="xsd:float">348</Value>
     </Variable>
     <Variable Type="float" Name="NewsBox.X" SetsValue="true">
-      <Value xsi:type="xsd:float">390</Value>
+      <Value xsi:type="xsd:float">50</Value>
+    </Variable>
+    <Variable Type="PositionUnitType" Name="NewsBox.XUnits" SetsValue="true">
+      <Value xsi:type="xsd:int">2</Value>
     </Variable>
     <Variable Type="float" Name="NewsBox.Y" SetsValue="true">
       <Value xsi:type="xsd:float">59</Value>
+    </Variable>
+    <Variable Type="int" Name="NewsHeader.Blue" SetsValue="true">
+      <Value xsi:type="xsd:int">255</Value>
+    </Variable>
+    <Variable Type="int" Name="NewsHeader.FontSize" SetsValue="true">
+      <Value xsi:type="xsd:int">36</Value>
+    </Variable>
+    <Variable Type="int" Name="NewsHeader.Green" SetsValue="true">
+      <Value xsi:type="xsd:int">255</Value>
+    </Variable>
+    <Variable Type="bool" Name="NewsHeader.IsBold" SetsValue="true">
+      <Value xsi:type="xsd:boolean">true</Value>
+    </Variable>
+    <Variable Type="string" Name="NewsHeader.Parent" SetsValue="true" />
+    <Variable Type="int" Name="NewsHeader.Red" SetsValue="true">
+      <Value xsi:type="xsd:int">255</Value>
+    </Variable>
+    <Variable Type="string" Name="NewsHeader.Text" SetsValue="true">
+      <Value xsi:type="xsd:string">Open Source News!</Value>
+    </Variable>
+    <Variable Type="float" Name="NewsHeader.X" SetsValue="true">
+      <Value xsi:type="xsd:float">50</Value>
+    </Variable>
+    <Variable Type="PositionUnitType" Name="NewsHeader.XUnits" SetsValue="true">
+      <Value xsi:type="xsd:int">2</Value>
+    </Variable>
+    <Variable Type="float" Name="NewsHeader.Y" SetsValue="true">
+      <Value xsi:type="xsd:float">0.7662835</Value>
+    </Variable>
+    <Variable Type="PositionUnitType" Name="NewsHeader.YUnits" SetsValue="true">
+      <Value xsi:type="xsd:int">3</Value>
     </Variable>
     <Variable Type="string" Name="PlayButton.Text" SetsValue="true">
       <Value xsi:type="xsd:string">Play</Value>
@@ -87,6 +127,7 @@
   <Instance Name="CreateButton" BaseType="Controls/ButtonStandard" />
   <Instance Name="SettingsButton" BaseType="Controls/ButtonStandard" />
   <Instance Name="DividerVerticalInstance" BaseType="Elements/DividerVertical" />
+  <Instance Name="NewsHeader" BaseType="Text" />
   <Instance Name="NewsBox" BaseType="Container" />
   <Behaviors />
 </ScreenSave>

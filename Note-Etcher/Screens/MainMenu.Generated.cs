@@ -43,6 +43,7 @@ if(element == null) throw new System.InvalidOperationException("Could not find a
     public ButtonStandard CreateButton { get; protected set; }
     public ButtonStandard SettingsButton { get; protected set; }
     public DividerVertical DividerVerticalInstance { get; protected set; }
+    public TextRuntime NewsHeader { get; protected set; }
     public ContainerRuntime NewsBox { get; protected set; }
 
     public MainMenu(InteractiveGue visual) : base(visual)
@@ -62,6 +63,7 @@ if(element == null) throw new System.InvalidOperationException("Could not find a
         CreateButton = global::Gum.Forms.GraphicalUiElementFormsExtensions.TryGetFrameworkElementByName<ButtonStandard>(this.Visual,"CreateButton");
         SettingsButton = global::Gum.Forms.GraphicalUiElementFormsExtensions.TryGetFrameworkElementByName<ButtonStandard>(this.Visual,"SettingsButton");
         DividerVerticalInstance = global::Gum.Forms.GraphicalUiElementFormsExtensions.TryGetFrameworkElementByName<DividerVertical>(this.Visual,"DividerVerticalInstance");
+        NewsHeader = this.Visual?.GetGraphicalUiElementByName("NewsHeader") as global::MonoGameGum.GueDeriving.TextRuntime;
         NewsBox = this.Visual?.GetGraphicalUiElementByName("NewsBox") as global::MonoGameGum.GueDeriving.ContainerRuntime;
         CustomInitialize();
     }
