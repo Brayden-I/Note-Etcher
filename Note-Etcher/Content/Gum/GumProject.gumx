@@ -52,6 +52,7 @@
   <Guides />
   <ShowLocalizationInGum>true</ShowLocalizationInGum>
   <CurrentLanguageIndex>0</CurrentLanguageIndex>
+  <ScreenReference Name="Createmode" />
   <ScreenReference Name="MainMenu" />
   <ScreenReference Name="Playmode" />
   <ScreenReference Name="SettingsMenu" />
@@ -98,6 +99,7 @@
   <ComponentReference Name="Elements/PercentBarIcon" />
   <ComponentReference Name="Elements/VerticalLines" />
   <ComponentReference Name="NoteEtcherComponents/Album" />
+  <ComponentReference Name="NoteEtcherComponents/ProjectCover" />
   <ComponentReference Name="Styles" />
   <StandardElementReference Name="Circle" />
   <StandardElementReference Name="ColoredRectangle" />

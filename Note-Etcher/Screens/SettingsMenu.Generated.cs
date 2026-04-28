@@ -37,9 +37,15 @@ if(element == null) throw new System.InvalidOperationException("Could not find a
             return gue;
         });
     }
+    public ButtonStandard SettingButton { get; protected set; }
+    public ButtonStandard SettingButton1 { get; protected set; }
+    public ButtonStandard SettingButton2 { get; protected set; }
+    public ButtonStandard SettingButton3 { get; protected set; }
+    public ContainerRuntime ContainerInstance { get; protected set; }
     public TextRuntime Title { get; protected set; }
-    public ButtonStandard BackButton { get; protected set; }
     public TextRuntime Header { get; protected set; }
+    public ColoredRectangleRuntime SettingsFrame { get; protected set; }
+    public ButtonStandard BackButton { get; protected set; }
 
     public SettingsMenu(InteractiveGue visual) : base(visual)
     {
@@ -53,9 +59,15 @@ if(element == null) throw new System.InvalidOperationException("Could not find a
     protected override void ReactToVisualChanged()
     {
         base.ReactToVisualChanged();
+        SettingButton = global::Gum.Forms.GraphicalUiElementFormsExtensions.TryGetFrameworkElementByName<ButtonStandard>(this.Visual,"SettingButton");
+        SettingButton1 = global::Gum.Forms.GraphicalUiElementFormsExtensions.TryGetFrameworkElementByName<ButtonStandard>(this.Visual,"SettingButton1");
+        SettingButton2 = global::Gum.Forms.GraphicalUiElementFormsExtensions.TryGetFrameworkElementByName<ButtonStandard>(this.Visual,"SettingButton2");
+        SettingButton3 = global::Gum.Forms.GraphicalUiElementFormsExtensions.TryGetFrameworkElementByName<ButtonStandard>(this.Visual,"SettingButton3");
+        ContainerInstance = this.Visual?.GetGraphicalUiElementByName("ContainerInstance") as global::MonoGameGum.GueDeriving.ContainerRuntime;
         Title = this.Visual?.GetGraphicalUiElementByName("Title") as global::MonoGameGum.GueDeriving.TextRuntime;
-        BackButton = global::Gum.Forms.GraphicalUiElementFormsExtensions.TryGetFrameworkElementByName<ButtonStandard>(this.Visual,"BackButton");
         Header = this.Visual?.GetGraphicalUiElementByName("Header") as global::MonoGameGum.GueDeriving.TextRuntime;
+        SettingsFrame = this.Visual?.GetGraphicalUiElementByName("SettingsFrame") as global::MonoGameGum.GueDeriving.ColoredRectangleRuntime;
+        BackButton = global::Gum.Forms.GraphicalUiElementFormsExtensions.TryGetFrameworkElementByName<ButtonStandard>(this.Visual,"BackButton");
         CustomInitialize();
     }
     //Not assigning variables because Object Instantiation Type is set to By Name rather than Fully In Code
