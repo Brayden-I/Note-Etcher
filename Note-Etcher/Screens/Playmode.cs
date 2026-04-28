@@ -17,5 +17,7 @@ namespace Note_Etcher.Screens
             BackButton.Click += (_, _) =>
                 Game._sceneManager.SwitchTo(Scenes.MAINMENU);
         }
+        
+        
     }
 }

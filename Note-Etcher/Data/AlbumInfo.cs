@@ -18,11 +18,15 @@ public class AlbumDetails
     [JsonPropertyName("Author")]
     public string Author { get; set; }
     [JsonPropertyName("Description")]
+    
     public string Description { get; set; }
     [JsonPropertyName("Keywords")]
     public List<string> Keywords { get; set; }
     [JsonPropertyName("stages")]
     public List<Stage> Stages { get; set; }
+    
+    [JsonPropertyName("Last Updated")]
+    public string LastUpdated { get; set; }
 }
 
 public class Stage
