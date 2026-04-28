@@ -5,7 +5,9 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using MonoGameGum;
 using Gum.Forms.Controls;
+using Note_Etcher.Components.NoteEtcherComponents;
 using Note_Etcher.IScenes.Essentials;
+using Note_Etcher.Data;
 
 namespace Note_Etcher.IScenes;
 
@@ -22,6 +24,20 @@ public class Playmode : IScene
         _game = game;
         _content = new ContentManager(game.Services, "Content");
     }
+    
+    private void LoadAlbums()
+    {
+        _gumScreen.AlbumContainer.Children.Clear();
+
+        foreach (var album in AlbumLoader.LoadAll())
+        {
+            var card = new Album();
+            card.TitleLabel.Text = album.Details.Name;
+            card.AuthorLabel.Text = album.Details.Author;
+            card.KeywordLabel.Text = string.Join(", ", album.Details.Keywords);
+            _gumScreen.AlbumContainer.Children.Add(card.Visual);
+        }
+    }
 
     public void LoadContent()
     {
@@ -30,8 +46,9 @@ public class Playmode : IScene
         _gumScreen = new Screens.Playmode();
         _gumScreen.Game = _game;
         _gumScreen.AddToRoot();
+        
+        LoadAlbums();
     }
-
     public void Update(GameTime gameTime)
     {
         var keyboard = Keyboard.GetState();
