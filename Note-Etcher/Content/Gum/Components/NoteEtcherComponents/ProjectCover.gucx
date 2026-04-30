@@ -25,9 +25,7 @@
     <Variable Type="DimensionUnitType" Name="ContainerInstance.HeightUnits" SetsValue="true">
       <Value xsi:type="xsd:int">1</Value>
     </Variable>
-    <Variable Type="string" Name="ContainerInstance.Parent" SetsValue="true">
-      <Value xsi:type="xsd:string">Frame</Value>
-    </Variable>
+    <Variable Type="string" Name="ContainerInstance.Parent" SetsValue="true" />
     <Variable Type="float" Name="ContainerInstance.Width" SetsValue="true">
       <Value xsi:type="xsd:float">100</Value>
     </Variable>
@@ -40,6 +38,9 @@
     <Variable Type="int" Name="Frame.Green" SetsValue="true">
       <Value xsi:type="xsd:int">61</Value>
     </Variable>
+    <Variable Type="bool" Name="Frame.HasEvents" SetsValue="true">
+      <Value xsi:type="xsd:boolean">true</Value>
+    </Variable>
     <Variable Type="float" Name="Frame.Height" SetsValue="true">
       <Value xsi:type="xsd:float">100</Value>
     </Variable>
@@ -48,6 +49,9 @@
     </Variable>
     <Variable Type="int" Name="Frame.Red" SetsValue="true">
       <Value xsi:type="xsd:int">168</Value>
+    </Variable>
+    <Variable Type="string" Name="Frame.Text" SetsValue="true">
+      <Value xsi:type="xsd:string"></Value>
     </Variable>
     <Variable Type="float" Name="Frame.Width" SetsValue="true">
       <Value xsi:type="xsd:float">100</Value>
@@ -79,6 +83,24 @@
     </Variable>
     <Variable Type="float" Name="KeywordLabel.Y" SetsValue="true">
       <Value xsi:type="xsd:float">0</Value>
+    </Variable>
+    <Variable Type="float" Name="SelectButton.X" SetsValue="true">
+      <Value xsi:type="xsd:float">95</Value>
+    </Variable>
+    <Variable Type="HorizontalAlignment" Name="SelectButton.XOrigin" SetsValue="true">
+      <Value xsi:type="xsd:int">2</Value>
+    </Variable>
+    <Variable Type="PositionUnitType" Name="SelectButton.XUnits" SetsValue="true">
+      <Value xsi:type="xsd:int">2</Value>
+    </Variable>
+    <Variable Type="float" Name="SelectButton.Y" SetsValue="true">
+      <Value xsi:type="xsd:float">50</Value>
+    </Variable>
+    <Variable Type="VerticalAlignment" Name="SelectButton.YOrigin" SetsValue="true">
+      <Value xsi:type="xsd:int">1</Value>
+    </Variable>
+    <Variable Type="PositionUnitType" Name="SelectButton.YUnits" SetsValue="true">
+      <Value xsi:type="xsd:int">3</Value>
     </Variable>
     <Variable Type="State" Name="State" Category="States and Visibility" SetsValue="false">
       <Value xsi:type="xsd:string">Default</Value>
@@ -114,7 +136,8 @@
   <Instance Name="TitleLabel" BaseType="Text" />
   <Instance Name="KeywordLabel" BaseType="Text" />
   <Instance Name="ChangeLabel" BaseType="Text" />
+  <Instance Name="Frame" BaseType="Controls/ButtonStandard" />
   <Instance Name="ContainerInstance" BaseType="Container" />
-  <Instance Name="Frame" BaseType="ColoredRectangle" />
+  <Instance Name="SelectButton" BaseType="Controls/ButtonIcon" />
   <Behaviors />
 </ComponentSave>

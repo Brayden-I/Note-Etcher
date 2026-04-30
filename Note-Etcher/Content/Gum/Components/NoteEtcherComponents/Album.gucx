@@ -26,9 +26,7 @@
     <Variable Type="DimensionUnitType" Name="ContainerInstance.HeightUnits" SetsValue="true">
       <Value xsi:type="xsd:int">1</Value>
     </Variable>
-    <Variable Type="string" Name="ContainerInstance.Parent" SetsValue="true">
-      <Value xsi:type="xsd:string">Frame</Value>
-    </Variable>
+    <Variable Type="string" Name="ContainerInstance.Parent" SetsValue="true" />
     <Variable Type="float" Name="ContainerInstance.Width" SetsValue="true">
       <Value xsi:type="xsd:float">100</Value>
     </Variable>
@@ -44,8 +42,14 @@
     <Variable Type="float" Name="Frame.Height" SetsValue="true">
       <Value xsi:type="xsd:float">150</Value>
     </Variable>
+    <Variable Type="float?" Name="Frame.MinHeight" SetsValue="true">
+      <Value xsi:type="xsd:float">0</Value>
+    </Variable>
     <Variable Type="int" Name="Frame.Red" SetsValue="true">
       <Value xsi:type="xsd:int">168</Value>
+    </Variable>
+    <Variable Type="string" Name="Frame.Text" SetsValue="true">
+      <Value xsi:type="xsd:string"></Value>
     </Variable>
     <Variable Type="float" Name="Frame.Width" SetsValue="true">
       <Value xsi:type="xsd:float">150</Value>
@@ -69,6 +73,25 @@
     <Variable Type="float" Name="KeywordLabel.Y" SetsValue="true">
       <Value xsi:type="xsd:float">0</Value>
     </Variable>
+    <Variable Type="string" Name="PlayButton.Parent" SetsValue="true" />
+    <Variable Type="float" Name="PlayButton.X" SetsValue="true">
+      <Value xsi:type="xsd:float">50</Value>
+    </Variable>
+    <Variable Type="HorizontalAlignment" Name="PlayButton.XOrigin" SetsValue="true">
+      <Value xsi:type="xsd:int">1</Value>
+    </Variable>
+    <Variable Type="PositionUnitType" Name="PlayButton.XUnits" SetsValue="true">
+      <Value xsi:type="xsd:int">2</Value>
+    </Variable>
+    <Variable Type="float" Name="PlayButton.Y" SetsValue="true">
+      <Value xsi:type="xsd:float">100</Value>
+    </Variable>
+    <Variable Type="VerticalAlignment" Name="PlayButton.YOrigin" SetsValue="true">
+      <Value xsi:type="xsd:int">0</Value>
+    </Variable>
+    <Variable Type="PositionUnitType" Name="PlayButton.YUnits" SetsValue="true">
+      <Value xsi:type="xsd:int">1</Value>
+    </Variable>
     <Variable Type="State" Name="State" Category="States and Visibility" SetsValue="false">
       <Value xsi:type="xsd:string">Default</Value>
     </Variable>
@@ -88,7 +111,8 @@
   <Instance Name="TitleLabel" BaseType="Text" />
   <Instance Name="KeywordLabel" BaseType="Text" />
   <Instance Name="AuthorLabel" BaseType="Text" />
-  <Instance Name="ContainerInstance" BaseType="Container" />
   <Instance Name="Frame" BaseType="ColoredRectangle" />
+  <Instance Name="ContainerInstance" BaseType="Container" />
+  <Instance Name="PlayButton" BaseType="Controls/ButtonIcon" />
   <Behaviors />
 </ComponentSave>

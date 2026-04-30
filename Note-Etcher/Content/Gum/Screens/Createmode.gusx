@@ -19,6 +19,7 @@
       <Value xsi:type="xsd:int">1</Value>
     </Variable>
     <Variable Type="float?" Name="AlbumContainer.MaxHeight" SetsValue="true" />
+    <Variable Type="string" Name="AlbumContainer.Parent" SetsValue="true" />
     <Variable Type="float" Name="AlbumContainer.StackSpacing" SetsValue="true">
       <Value xsi:type="xsd:float">50</Value>
     </Variable>
@@ -132,6 +133,7 @@
     <Variable Type="DimensionUnitType" Name="InfoFrame.HeightUnits" SetsValue="true">
       <Value xsi:type="xsd:int">1</Value>
     </Variable>
+    <Variable Type="string" Name="InfoFrame.Parent" SetsValue="true" />
     <Variable Type="int" Name="InfoFrame.Red" SetsValue="true">
       <Value xsi:type="xsd:int">60</Value>
     </Variable>
@@ -196,8 +198,6 @@
     <Variable Type="float" Name="TitleLabel.Y" SetsValue="true">
       <Value xsi:type="xsd:float">0</Value>
     </Variable>
-    <Variable Type="string" Name="AlbumContainer.Parent" SetsValue="true" />
-    <Variable Type="string" Name="InfoFrame.Parent" SetsValue="true" />
   </State>
   <Instance Name="AlbumContainer" BaseType="Container" />
   <Instance Name="InfoFrame" BaseType="ColoredRectangle" />
