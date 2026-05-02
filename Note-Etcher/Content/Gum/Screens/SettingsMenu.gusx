@@ -86,6 +86,7 @@
     <Variable Type="DimensionUnitType" Name="SettingsFrame.HeightUnits" SetsValue="true">
       <Value xsi:type="xsd:int">1</Value>
     </Variable>
+    <Variable Type="string" Name="SettingsFrame.Parent" SetsValue="true" />
     <Variable Type="float" Name="SettingsFrame.Width" SetsValue="true">
       <Value xsi:type="xsd:float">40</Value>
     </Variable>
@@ -125,7 +126,6 @@
     <Variable Type="PositionUnitType" Name="Title.YUnits" SetsValue="true">
       <Value xsi:type="xsd:int">3</Value>
     </Variable>
-    <Variable Type="string" Name="SettingsFrame.Parent" SetsValue="true" />
   </State>
   <Instance Name="SettingButton" BaseType="Controls/ButtonStandard" />
   <Instance Name="SettingButton1" BaseType="Controls/ButtonStandard" />

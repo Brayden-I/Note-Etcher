@@ -6,6 +6,7 @@ using Gum.Wireframe;
 using GumRuntime;
 using MonoGameGum;
 using MonoGameGum.GueDeriving;
+using Note_Etcher.Components.Controls;
 using RenderingLibrary.Graphics;
 using System.Linq;
 namespace Note_Etcher.Components.NoteEtcherComponents;
@@ -35,8 +36,9 @@ if(element == null) throw new System.InvalidOperationException("Could not find a
     public TextRuntime TitleLabel { get; protected set; }
     public TextRuntime KeywordLabel { get; protected set; }
     public TextRuntime AuthorLabel { get; protected set; }
-    public ContainerRuntime ContainerInstance { get; protected set; }
     public ColoredRectangleRuntime Frame { get; protected set; }
+    public ContainerRuntime ContainerInstance { get; protected set; }
+    public ButtonIcon PlayButton { get; protected set; }
 
     public Album(InteractiveGue visual) : base(visual)
     {
@@ -53,8 +55,9 @@ if(element == null) throw new System.InvalidOperationException("Could not find a
         TitleLabel = this.Visual?.GetGraphicalUiElementByName("TitleLabel") as global::MonoGameGum.GueDeriving.TextRuntime;
         KeywordLabel = this.Visual?.GetGraphicalUiElementByName("KeywordLabel") as global::MonoGameGum.GueDeriving.TextRuntime;
         AuthorLabel = this.Visual?.GetGraphicalUiElementByName("AuthorLabel") as global::MonoGameGum.GueDeriving.TextRuntime;
-        ContainerInstance = this.Visual?.GetGraphicalUiElementByName("ContainerInstance") as global::MonoGameGum.GueDeriving.ContainerRuntime;
         Frame = this.Visual?.GetGraphicalUiElementByName("Frame") as global::MonoGameGum.GueDeriving.ColoredRectangleRuntime;
+        ContainerInstance = this.Visual?.GetGraphicalUiElementByName("ContainerInstance") as global::MonoGameGum.GueDeriving.ContainerRuntime;
+        PlayButton = global::Gum.Forms.GraphicalUiElementFormsExtensions.TryGetFrameworkElementByName<ButtonIcon>(this.Visual,"PlayButton");
         CustomInitialize();
     }
     //Not assigning variables because Object Instantiation Type is set to By Name rather than Fully In Code
