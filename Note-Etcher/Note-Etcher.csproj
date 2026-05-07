@@ -5,6 +5,7 @@
     <RollForward>Major</RollForward>
     <PublishReadyToRun>false</PublishReadyToRun>
     <TieredCompilation>false</TieredCompilation>
+    <ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>app.manifest</ApplicationManifest>
@@ -28,19 +29,13 @@
     <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.*" />
   </ItemGroup>
   <ItemGroup>
-	<None Update="Content/Gum/**/*.*">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <None Update="Content/Gum/**/*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Data/**/*">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Content\Sprites\" />
-    <Folder Include="Data\Albums\RetroRunner\Assets\" />
-    <Folder Include="Data\Albums\RetroRunner\Scripts\" />
-    <Folder Include="Services\Charts\Parser\" />
   </ItemGroup>
 </Project>
