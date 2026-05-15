@@ -2,7 +2,10 @@
   "TreeViewState": {
     "ExpandedNodes": [
       "Screens",
+      "Screens/Playmode",
+      "Screens/Playmode/AlbumContainer",
       "Components",
+      "Components/NoteEtcherComponents",
       "Standard",
       "Behaviors"
     ]

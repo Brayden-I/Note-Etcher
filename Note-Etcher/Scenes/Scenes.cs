@@ -5,6 +5,6 @@ public enum Scenes
     MAINMENU,
     SETTINGS,
     
-    PLAYMODE, // TODO: Create a UI for this scene
+    PLAYMODE, 
     CREATEMODE
 }
